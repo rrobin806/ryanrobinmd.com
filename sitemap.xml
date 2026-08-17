@@ -22,4 +22,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ryanrobinmd.com/blog/ultrasound-guided-vs-landmark-guided-injections.html</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
