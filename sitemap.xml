@@ -28,4 +28,16 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ryanrobinmd.com/blog/plantar-fasciitis-heel-pain-evidence-based-care.html</loc>
+    <lastmod>2026-08-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://ryanrobinmd.com/blog/high-ankle-sprain-syndesmosis-injury-explained.html</loc>
+    <lastmod>2026-08-21</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

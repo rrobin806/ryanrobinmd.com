@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Plantar Fasciitis: What the Evidence Says About Heel Pain | Ryan Robin MD</title>
+<meta name="description" content="A patient-focused look at what actually causes plantar fasciitis and what the evidence supports for treating it, from stretching to shockwave therapy. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Plantar Fasciitis: What the Evidence Says About That First-Step Heel Pain",
+  "description": "A patient-focused look at what actually causes plantar fasciitis and what the evidence supports for treating it, from stretching to shockwave therapy.",
+  "datePublished": "2026-08-19",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/plantar-fasciitis-heel-pain-evidence-based-care.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Common Injuries Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Common Injuries Explained</div>
+  <h1 class="post-title">Plantar Fasciitis: What the Evidence Says About That First-Step Heel Pain</h1>
+  <div class="post-meta">August 19, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>Plantar fasciitis is the most common cause of heel pain seen in sports medicine and primary care clinics, and it shows up often this time of year as cross country runners build mileage and fall athletes return to two-a-days on hard preseason turf. The hallmark complaint is familiar to almost anyone who's had it: a sharp, bruised-feeling pain in the bottom of the heel with the very first steps out of bed, which eases somewhat with walking but often returns after long periods on your feet.</p>
+
+    <p>Here's what current research actually says about why that happens and what the evidence supports for treating it.</p>
+
+    <h2>It's Less "Inflammation" Than the Name Suggests</h2>
+    <p>The "-itis" in plantar fasciitis implies straightforward inflammation, but tissue studies of chronically painful plantar fascia more often show degenerative changes &mdash; disorganized collagen, thickening, and small areas of tissue breakdown &mdash; rather than the classic inflammatory picture seen in an acute injury. A 2025 comprehensive review of the diagnosis and management literature describes this shift in understanding as central to how clinicians now approach treatment, since it explains why anti-inflammatory approaches alone are often disappointing for pain that's been present for months.<sup>1</sup></p>
+
+    <h2>Why Mornings Are the Worst</h2>
+    <p>Overnight, the plantar fascia shortens while the foot is unweighted and relatively still. The first steps of the day suddenly stretch that tightened tissue, which is what produces the characteristic sharp morning pain. This mechanical explanation is also why night splints, which hold the foot in a gently stretched position overnight, have a role in some treatment plans.</p>
+
+    <h2>What the Evidence Actually Supports</h2>
+    <p>Clinical practice guidelines from the Academy of Orthopaedic Physical Therapy, published in the <em>Journal of Orthopaedic &amp; Sports Physical Therapy</em>, recommend plantar-fascia-specific and calf-stretching programs as a first-line approach, supported by manual therapy, foot taping for short-term relief, and night splints for people whose pain is worst with that first morning step.<sup>2</sup> Notably, the same guidelines caution against relying on orthotic inserts as a stand-alone treatment &mdash; they appear to help more as one piece of a broader plan than as a fix on their own.</p>
+
+    <p>For the roughly 90% of cases that improve with these conservative measures over several months, that's usually where treatment stays.<sup>1</sup> For pain that doesn't respond to several months of consistent conservative care, a 2026 network meta-analysis of 63 randomized trials compared shockwave therapy, platelet-rich plasma (PRP), corticosteroid injections, and other minimally invasive options, finding that different approaches offer different tradeoffs in short- versus longer-term relief &mdash; reinforcing that there's no single "best" procedure and that the choice depends on how long symptoms have persisted and what's already been tried.<sup>3</sup></p>
+
+    <h2>The Takeaway</h2>
+    <p>Most plantar fasciitis is a slow-healing overuse condition, not an emergency, and the evidence favors patience with a structured stretching and loading program before moving toward procedures. Patients in the western suburbs who've been managing heel pain through a full cross country or soccer season without improvement are reasonable candidates for an in-person evaluation to confirm the diagnosis and rule out less common causes of heel pain.</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you are experiencing persistent heel pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>"Comprehensive Review and Evidence-Based Treatment Framework for Optimizing Plantar Fasciitis Diagnosis and Management." <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12294660/" target="_blank" rel="noopener">PMC</a>. 2025.</li>
+        <li>Koc TA, et al. "Heel Pain &ndash; Plantar Fasciitis: Revision 2023." <em>Journal of Orthopaedic &amp; Sports Physical Therapy.</em> <a href="https://www.jospt.org/doi/10.2519/jospt.2023.0303" target="_blank" rel="noopener">JOSPT 2023;53(12)</a>; free full text via <a href="https://www.orthopt.org/uploads/content_files/files/koc_et_al_2023_heel_pain_plantar_fasciitis_revision_2023.pdf" target="_blank" rel="noopener">Academy of Orthopaedic Physical Therapy</a>.</li>
+        <li>"Comparative effectiveness of minimally invasive therapies for plantar fasciitis: a systematic review and network meta-analysis." <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12992864/" target="_blank" rel="noopener">Scientific Reports, PMC</a>. 2026.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
