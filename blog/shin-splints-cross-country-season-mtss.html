@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shin Splints and Cross Country Season: Understanding Medial Tibial Stress Syndrome | Ryan Robin MD</title>
+<meta name="description" content="As cross country season ramps up, a look at what the research says about medial tibial stress syndrome (shin splints) &mdash; who's at risk, why it happens, and what the evidence supports for recovery." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Shin Splints and Cross Country Season: Understanding Medial Tibial Stress Syndrome",
+  "description": "As cross country season ramps up, a look at what the research says about medial tibial stress syndrome (shin splints) — who's at risk, why it happens, and what the evidence supports for recovery.",
+  "datePublished": "2026-08-31",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/shin-splints-cross-country-season-mtss.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Injury Prevention"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Injury Prevention</div>
+  <h1 class="post-title">Shin Splints and Cross Country Season: Understanding Medial Tibial Stress Syndrome</h1>
+  <div class="post-meta">August 31, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>Cross country season is underway across the Chicago suburbs, and with it comes one of running's most common early-season complaints: an aching, diffuse pain along the inner shin that shows up a few weeks into training. Runners and parents often call it "shin splints." In sports medicine, the more precise term is <strong>medial tibial stress syndrome</strong>, or MTSS &mdash; and it's worth understanding both how common it is and what the evidence actually supports for managing it.</p>
+
+    <h2>How Common Is It?</h2>
+    <p>MTSS is one of the most frequently reported overuse injuries in runners, with reported incidence ranging widely across studies &mdash; from roughly 5% up to 35% of runners depending on the population and how the condition was defined.<sup>1,2</sup> In high school cross country runners specifically, one commonly cited study found a season incidence of about 12% over an eight-week training block, with certain runners &mdash; particularly those newer to the sport &mdash; disproportionately affected.<sup>3</sup> A separate study of high school runners found the overall injury rate was roughly 2.8 per 1,000 athlete-exposures, with a notably higher rate in female athletes than male athletes.<sup>4</sup></p>
+
+    <h2>What's Actually Happening in the Bone</h2>
+    <p>MTSS produces pain along the posteromedial (inner, lower) border of the tibia, typically in the middle-to-distal third of the shin, and is classically brought on by running or similar repetitive impact and eased by rest.<sup>5</sup> It's generally understood as a bone-stress response: repetitive loading outpaces the tibia's ability to remodel and adapt, producing localized bone stress and periosteal irritation. Left unaddressed, this same continuum of bone stress can, in some cases, progress toward a tibial stress fracture &mdash; which is part of why early recognition matters.<sup>4,5</sup></p>
+
+    <h2>What Actually Raises the Risk</h2>
+    <p>A systematic review and meta-analysis of risk factors for MTSS in runners identified several consistent contributors: female sex, a prior history of MTSS, use of orthotics, higher body mass index, greater navicular drop (a measure of foot pronation), and reduced ankle plantarflexion range of motion.<sup>2,6</sup> Training-related factors matter too &mdash; sharp increases in mileage or intensity, running on hard or uneven surfaces, and calf muscle weakness or tightness have also been associated with higher risk.<sup>2,6</sup> None of these factors guarantee an athlete will develop MTSS, but they help explain why the same training block affects some runners and not others.</p>
+
+    <h2>What the Evidence Supports for Recovery</h2>
+    <p>Despite decades of research, there is no single intervention proven clearly superior to relative rest combined with a gradual, graded return to running.<sup>1,7</sup> Typical management includes an initial reduction in impact loading, addressing calf flexibility and strength, and a structured, progressive reloading program rather than a hard stop-and-restart; low-risk bone stress injuries like MTSS generally follow a healing timeline in the range of four to eight weeks, though this varies by individual and severity.<sup>7,8</sup> Because "run through it" and "rest completely, then resume full mileage" are both associated with higher re-injury risk, a graded plan &mdash; and, for a persistent or recurring case, an in-person evaluation with a sports medicine physician &mdash; is generally more reliable than guesswork.<sup>7,8</sup></p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If your athlete has shin pain that persists beyond a few days of rest or worsens with activity, an in-person evaluation &mdash; including at a sports medicine practice near you, such as our Bloomingdale or Schaumburg, IL offices &mdash; can help rule out a developing stress fracture.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Kirby S, et al. <a href="https://www.ncbi.nlm.nih.gov/books/NBK538479/" target="_blank" rel="noopener">"Medial Tibial Stress Syndrome."</a> <em>StatPearls.</em> NCBI Bookshelf, updated 2024.</li>
+        <li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11958822/" target="_blank" rel="noopener">"Medial Tibial Stress Syndrome: A Scoping Review of Epidemiology, Biomechanics, and Risk Factors."</a></li>
+        <li>Bennett JE, Reinking MF, Pluemer B, Pentel A, Seaton M, Killian C. <a href="https://pubmed.ncbi.nlm.nih.gov/11570734/" target="_blank" rel="noopener">"Factors contributing to the development of medial tibial stress syndrome in high school runners."</a> <em>Journal of Orthopaedic &amp; Sports Physical Therapy.</em> 2001;31(9):504-510.</li>
+        <li>Yates B, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/17366958/" target="_blank" rel="noopener">"Medial tibial stress syndrome in high school cross-country runners: incidence and risk factors."</a> <em>Journal of Orthopaedic &amp; Sports Physical Therapy.</em> 2007.</li>
+        <li>Physiopedia. <a href="https://www.physio-pedia.com/Medial_Tibial_Stress_Syndrome" target="_blank" rel="noopener">"Medial Tibial Stress Syndrome."</a></li>
+        <li><a href="https://www.tandfonline.com/doi/full/10.2147/OAJSM.S39331" target="_blank" rel="noopener">"Risk factors associated with medial tibial stress syndrome in runners: a systematic review and meta-analysis."</a> <em>Open Access Journal of Sports Medicine.</em></li>
+        <li>Winters M, et al. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7602098/" target="_blank" rel="noopener">"Medial Tibial Stress Syndrome in Novice and Recreational Runners: A Systematic Review."</a></li>
+        <li>Warden SJ, et al. Bone stress injury healing timelines and graded return-to-run protocols are discussed in <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11417438/" target="_blank" rel="noopener">"Physical Therapy Perspectives for Medial Tibial Stress Syndrome in a Novice Runner: A Case Report."</a></li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
