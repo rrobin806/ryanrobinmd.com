@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Understanding Tendinopathy: Why "Tendinitis" Is Often the Wrong Word | Ryan Robin MD</title>
+<meta name="description" content="Most chronic tendon pain isn't inflammation. A look at what's actually happening in tendinopathy, why the old 'tendinitis' label is often inaccurate, and what that means for treatment." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Understanding Tendinopathy: Why \"Tendinitis\" Is Often the Wrong Word",
+  "description": "Most chronic tendon pain isn't inflammation. A look at what's actually happening in tendinopathy, why the old 'tendinitis' label is often inaccurate, and what that means for treatment.",
+  "datePublished": "2026-08-28",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/understanding-tendinopathy-tendinitis-wrong-word.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Common Injuries Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Common Injuries Explained</div>
+  <h1 class="post-title">Understanding Tendinopathy: Why "Tendinitis" Is Often the Wrong Word</h1>
+  <div class="post-meta">August 28, 2026 · 6 min read</div>
+
+  <div class="post-body">
+    <p>"Tendinitis" is one of the most familiar words in sports medicine &mdash; patients arrive already using it for elbow, knee, shoulder, and Achilles pain alike. The problem is that the suffix "-itis" means inflammation, and for most chronic tendon pain, that's not actually what's happening in the tissue. The more accurate umbrella term, and the one increasingly used in the sports medicine literature, is <strong>tendinopathy</strong>. The distinction isn't just semantic &mdash; it shapes how these conditions are understood and treated.</p>
+
+    <h2>What "-itis" Gets Wrong</h2>
+    <p>When researchers began biopsying chronically painful tendons in the 1990s and 2000s, they expected to find the inflammatory cells characteristic of acute inflammation. Instead, most chronic, degenerative tendon samples showed collagen fiber disorganization, increased ground substance and proteoglycan content, disordered new blood vessel growth (neovascularization), and abnormal tenocyte (tendon cell) activity &mdash; with little to no inflammatory cell infiltration.<sup>1,2</sup> Researchers including Maffulli and colleagues were among the first to push for retiring "tendinitis" in favor of terminology that reflected what the tissue was actually showing under the microscope.<sup>1</sup></p>
+
+    <p>That's led to more precise language: <strong>tendinitis</strong> now technically refers to a true acute inflammatory process, which does occur but is comparatively uncommon and short-lived. <strong>Tendinosis</strong> describes the chronic degenerative, non-inflammatory changes described above. <strong>Tendinopathy</strong> is the broader clinical umbrella term for painful tendon conditions in general, used when the precise underlying tissue state hasn't been (or can't practically be) confirmed &mdash; which, in a clinic visit, is nearly always.<sup>1,3</sup></p>
+
+    <h2>A Continuum, Not a Single Snapshot</h2>
+    <p>One influential model, first proposed by Cook and Purdam, frames tendon pathology as a continuum with three overlapping stages rather than a fixed diagnosis.<sup>4,5</sup> <strong>Reactive tendinopathy</strong> is an early, non-inflammatory swelling response to a sudden spike in load &mdash; think a rapid increase in running mileage or a new training block. If load and irritation continue, the tendon can progress to <strong>tendon dysrepair</strong>, with more matrix disorganization, and eventually to <strong>degenerative tendinopathy</strong>, marked by more permanent structural changes, areas of cell death, and disordered collagen that behave less like tendon and more like scar-like tissue.<sup>4,5</sup> A tendon can also move between these stages, and different regions of the same tendon can be at different points on the continuum simultaneously &mdash; which is part of why treatment isn't one-size-fits-all and why imaging findings don't always match a patient's symptoms.<sup>5</sup> The continuum model itself has also been debated in more recent literature, particularly given that tendinopathy is fundamentally a pain condition and structural imaging doesn't always correlate closely with how much pain someone is in.<sup>5</sup></p>
+
+    <h2>Why the Terminology Actually Matters for Treatment</h2>
+    <p>If chronic tendon pain were primarily inflammatory, anti-inflammatory treatment (NSAIDs, corticosteroid injections) would be the logical mainstay. But because most chronic tendinopathy is a degenerative, failed-healing process rather than an inflammatory one, that approach has a mismatched rationale &mdash; and the outcomes data reflects it. A systematic review of corticosteroid injections for tendinopathy found they reduce pain in the short term, but that benefit reverses at intermediate and longer-term follow-up compared with other treatments, including physical therapy.<sup>6</sup> Some research has raised concern that corticosteroid injections may also weaken tendon tissue structurally with repeated use.<sup>6</sup></p>
+
+    <p>Instead, current clinical practice guidelines &mdash; including a 2024 revision from the American Physical Therapy Association's Academy of Orthopaedic Physical Therapy on Achilles tendinopathy &mdash; identify progressive tendon loading exercise as first-line treatment.<sup>7,8</sup> The logic follows directly from the pathology: since the issue is a tendon that hasn't adapted to (or has broken down under) its current load, the evidence-based fix is to reintroduce load in a controlled, progressive way that allows the tendon to remodel, rather than simply suppressing pain signals. That process is often gradual; even with structured loading programs, meaningful improvement can take months, and a meaningful minority of patients still have some symptoms at longer-term follow-up.<sup>9</sup></p>
+
+    <h2>The Takeaway</h2>
+    <p>None of this means the word "tendinitis" is always wrong &mdash; true acute inflammatory tendon injuries exist. But for the much more common presentation of tendon pain that's been building for weeks or months, "tendinopathy" is usually the more accurate word, and it points toward a very different treatment philosophy: progressive loading and time, rather than rest and anti-inflammatories alone.</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you're experiencing persistent tendon pain, an in-person evaluation &mdash; including at a sports medicine practice near you, such as our Bloomingdale or Schaumburg, IL offices &mdash; can help determine where a tendon sits on this spectrum and what treatment approach fits.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Maffulli N, Khan KM, Puddu G. <a href="https://pubmed.ncbi.nlm.nih.gov/9660135/" target="_blank" rel="noopener">"Overuse tendon conditions: time to change a confusing terminology."</a> <em>Arthroscopy.</em> 1998;14(8):840-843.</li>
+        <li>Riley G. <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC7886058" target="_blank" rel="noopener">"Recent advances in tendinopathy."</a> Review of tendon failed-healing pathology and non-inflammatory histopathological findings.</li>
+        <li>Physiopedia. <a href="https://www.physio-pedia.com/Tendinopathy" target="_blank" rel="noopener">"Tendinopathy."</a> Overview of tendinitis, tendinosis, and tendinopathy terminology.</li>
+        <li>Cook JL, Purdam CR. <a href="https://pubmed.ncbi.nlm.nih.gov/18812414/" target="_blank" rel="noopener">"Is tendon pathology a continuum? A pathology model to explain the clinical presentation of load-induced tendinopathy."</a> <em>British Journal of Sports Medicine.</em> 2009;43(6):409-416.</li>
+        <li>Docking SI, Cook J. <a href="https://pubmed.ncbi.nlm.nih.gov/27127294/" target="_blank" rel="noopener">"Revisiting the continuum model of tendon pathology: what is its merit in clinical practice and research?"</a> <em>British Journal of Sports Medicine.</em> 2019;53(11):701-703.</li>
+        <li>Coombes BK, Bisset L, Vicenzino B. <a href="https://pubmed.ncbi.nlm.nih.gov/20970844/" target="_blank" rel="noopener">"Efficacy and safety of corticosteroid injections and other injections for management of tendinopathy: a systematic review of randomised controlled trials."</a> <em>The Lancet.</em> 2010;376(9754):1751-1767.</li>
+        <li>Martin RL, et al. <a href="https://www.jospt.org/doi/10.2519/jospt.2025.0501" target="_blank" rel="noopener">"Achilles Pain, Stiffness, and Muscle Power Deficits: Midportion Achilles Tendinopathy Revision – 2024."</a> Clinical Practice Guidelines, Academy of Orthopaedic Physical Therapy, APTA. <em>Journal of Orthopaedic &amp; Sports Physical Therapy.</em> 2024.</li>
+        <li>JOSPT. <a href="https://www.jospt.org/doi/10.2519/jospt.2023.12440" target="_blank" rel="noopener">"Warming-up for the Latest on Diagnosing and Managing Tendinopathy."</a> <em>Journal of Orthopaedic &amp; Sports Physical Therapy.</em> 2023.</li>
+        <li>Silbernagel KG, et al. <a href="https://ncbi.nlm.nih.gov/pmc/articles/PMC11022783/" target="_blank" rel="noopener">"An Isometric and Functionally Based 4-Stage Progressive Loading Program in Achilles Tendinopathy: A 12-Month Pilot Study."</a></li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
