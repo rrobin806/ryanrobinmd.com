@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What Does a Sports Medicine Physician Actually Do? | Ryan Robin MD</title>
+<meta name="description" content="Sports medicine physicians are often mistaken for orthopedic surgeons. A look at the training, scope, and non-operative approach that actually define the specialty." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "What Does a Sports Medicine Physician Actually Do? Understanding a Non-Surgical Specialty",
+  "description": "Sports medicine physicians are often mistaken for orthopedic surgeons. A look at the training, scope, and non-operative approach that actually define the specialty.",
+  "datePublished": "2026-09-02",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/what-is-a-sports-medicine-physician-nonoperative-specialty.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Sports Medicine Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Sports Medicine Explained</div>
+  <h1 class="post-title">What Does a Sports Medicine Physician Actually Do? Understanding a Non-Surgical Specialty</h1>
+  <div class="post-meta">September 2, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>"Sports medicine" is one of the more misunderstood terms in healthcare. Many patients assume it refers to orthopedic surgeons who happen to treat athletes. In reality, sports medicine is its own board-certified specialty, and most sports medicine physicians are trained specifically to manage injuries and conditions without surgery &mdash; referring out only when an operation is genuinely the right next step.</p>
+
+    <h2>The Training Path Is Different From Orthopedic Surgery</h2>
+    <p>Sports medicine physicians first complete a full residency in family medicine, internal medicine, pediatrics, emergency medicine, or physical medicine and rehabilitation, then go on to an ACGME-accredited sports medicine fellowship, followed by board certification through the American Board of Medical Specialties.<sup>1</sup> That's a fundamentally different training pipeline from orthopedic surgery, built around managing the full spectrum of an athlete's health &mdash; not just operating on injured structures.</p>
+
+    <h2>The Scope Is Broader Than Just "Sprains and Strains"</h2>
+    <p>According to the American Medical Society for Sports Medicine's official scope of practice, sports medicine physicians are trained to diagnose and manage musculoskeletal conditions of the spine and extremities, sports-related concussion, cardiovascular and pulmonary conditions in athletes, heat and environmental illness, and a long list of other issues that intersect with physical activity &mdash; while independently interpreting the imaging (X-ray, ultrasound, MRI) needed to do so.<sup>1</sup> In practice, that means a sports medicine visit might address a swollen knee, an irregular heart rhythm found on a pre-participation physical, and a question about safe return to play after a concussion, all within the same specialty.</p>
+
+    <h2>Procedures Without an Operating Room</h2>
+    <p>Within that non-operative scope, sports medicine physicians are trained to perform joint and tendon sheath injections, trigger point injections, nerve entrapment injections, and image-guided procedures using ultrasound, fluoroscopy, or CT guidance.<sup>1</sup> Diagnostic musculoskeletal ultrasound in particular has become a defining tool of the specialty: a recent survey of sports medicine fellowship programs found ultrasound training now a core, well-established part of fellowship curricula, with ongoing efforts by AMSSM to standardize and expand the competencies expected of graduating fellows.<sup>2</sup></p>
+
+    <h2>Working Alongside, Not Instead Of, Orthopedic Surgery</h2>
+    <p>None of this replaces orthopedic surgery &mdash; it complements it. Most musculoskeletal injuries, including many that patients assume need an operation, respond well to non-surgical management: activity modification, targeted rehabilitation, and, when appropriate, image-guided injections. When imaging or exam findings point toward a structural problem that truly needs surgical repair, sports medicine physicians refer to and coordinate care with orthopedic surgery colleagues, rather than trying to manage everything non-operatively regardless of the diagnosis.</p>
+
+    <h2>The Takeaway</h2>
+    <p>If your first visit for a sports injury doesn't end in a surgery discussion, that's not necessarily because the problem wasn't taken seriously &mdash; it may just mean you saw a physician whose entire training is built around the non-operative side of orthopedic care. For patients across Bloomingdale and Schaumburg, understanding that distinction can make it easier to know which type of specialist to see first for a new injury.</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified physician. If you have a new or ongoing injury, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>"Sports Medicine Physician Scope of Practice." <a href="https://www.amssm.org/PhyScopeOfPractice.php" target="_blank" rel="noopener">American Medical Society for Sports Medicine (AMSSM)</a>.</li>
+        <li>"The State of Sports Ultrasound Education and Training among Primary Care Sports Medicine Fellowships, 2023-2024." <a href="https://pubmed.ncbi.nlm.nih.gov/40627563/" target="_blank" rel="noopener">PubMed</a>.</li>
+        <li>"What Is a Sports Medicine Physician?" <a href="https://www.amssm.org/what-is-a-sports-medicine-physician.php" target="_blank" rel="noopener">AMSSM Patient Education</a>.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
