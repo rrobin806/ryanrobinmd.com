@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Heat Illness in Early-Season Football | Ryan Robin MD</title>
+<meta name="description" content="What sports medicine research shows about exertional heat illness in youth, high school, and college football, and the policies linked to lower risk. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Heat Illness in Early-Season Football: What the Research Says About Prevention",
+  "description": "What sports medicine research shows about exertional heat illness in youth, high school, and college football, and the policies linked to lower risk. General education, not medical advice.",
+  "datePublished": "2026-09-11",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/exertional-heat-illness-football-prevention.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Injury Prevention"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Injury Prevention</div>
+  <h1 class="post-title">Heat Illness in Early-Season Football: What the Research Says About Prevention</h1>
+  <div class="post-meta">September 11, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>Football season is underway, and early-season practices and games often still fall on hot, humid days, including across the Chicago suburbs. That is when exertional heat illness is most likely. Heat cramps and heat exhaustion are the common forms. Exertional heat stroke is less common, but it is a true medical emergency.</p>
+
+    <p>The National Athletic Trainers' Association calls exertional heat stroke one of the leading causes of sudden death during sport.<sup>1</sup> The research also shows that much of this risk can be reduced with preparation and policy. Here is what the evidence says.</p>
+
+    <h2>Preseason Is the Highest-Risk Window</h2>
+    <p>A study of youth, high school, and college football programs tracked heat illness events recorded by athletic trainers over the 2012&ndash;2014 seasons. At every level, rates were highest during the preseason. The most common events were heat cramps, heat exhaustion, and dehydration.<sup>2</sup> The authors noted that the overall risk was low. They also noted that the preseason pattern points to how much the first weeks of practice matter, since athletes are not yet used to working hard in the heat.</p>
+
+    <h2>Heat Acclimatization Policies Appear to Work</h2>
+    <p>In 2009, an NATA-led task force released guidelines for phasing in preseason practice gradually. The guidelines limit early practice length, equipment, and the number of two-a-day sessions while athletes adapt to the heat. Researchers later compared preseason heat illness rates in high school football between states that mandated these guidelines and states that did not. Rates were significantly lower in state-years with a mandate.<sup>3</sup></p>
+
+    <h2>On-Site Preparedness Is Uneven</h2>
+    <p>A separate national survey asked athletic trainers about six heat stroke preparedness strategies in high school football. These included an emergency action plan, a cold-water immersion tub ready before practice, environmental (wet-bulb globe temperature) monitoring, and access to hydration. Only about 27.5% of respondents said their school used all six. The figure was higher in hotter regions with state mandates and lower in milder regions without them.<sup>4</sup> Northern states are often assumed to be lower risk, yet that is where preparedness was least consistent.</p>
+
+    <h2>Why Rapid Cooling Is the Priority</h2>
+    <p>The American College of Sports Medicine's consensus statement on exertional heat illness describes heat stroke management as a "chain of survival." The steps are rapid recognition, stopping activity, and rapid total-body cooling, ideally on site. As the statement puts it, "time is tissue": outcomes appear to relate to how long body temperature stays dangerously high.<sup>5</sup> The NATA position statement likewise describes cold-water immersion as the preferred cooling method and stresses having it planned in advance.<sup>1</sup></p>
+
+    <h2>The Bottom Line</h2>
+    <p>The research supports a few general conclusions:</p>
+    <ul>
+      <li><strong>Heat illness risk peaks early in the season</strong>, when athletes are least acclimatized.<sup>2</sup></li>
+      <li><strong>Gradual acclimatization policies are associated with fewer heat illnesses</strong> in high school football.<sup>3</sup></li>
+      <li><strong>Preparedness varies widely between schools</strong>, especially in milder climates.<sup>4</sup></li>
+      <li><strong>Exertional heat stroke is an emergency</strong> where rapid on-site cooling is the central step.<sup>1,5</sup></li>
+    </ul>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Casa DJ, DeMartini JK, Bergeron MF, et al. <a href="https://doi.org/10.4085/1062-6050-50.9.07" target="_blank" rel="noopener">"National Athletic Trainers' Association Position Statement: Exertional Heat Illnesses."</a> <em>Journal of Athletic Training.</em> 2015;50(9):986-1000.</li>
+        <li>Yeargin SW, Kerr ZY, Casa DJ, et al. <a href="https://doi.org/10.1249/MSS.0000000000000934" target="_blank" rel="noopener">"Epidemiology of Exertional Heat Illnesses in Youth, High School, and College Football."</a> <em>Medicine &amp; Science in Sports &amp; Exercise.</em> 2016;48(8):1523-1529.</li>
+        <li>Kerr ZY, Register-Mihalik JK, Pryor RR, et al. <a href="https://doi.org/10.1289/EHP4163" target="_blank" rel="noopener">"The Association between Mandated Preseason Heat Acclimatization Guidelines and Exertional Heat Illness during Preseason High School American Football Practices."</a> <em>Environmental Health Perspectives.</em> 2019;127(4):47003.</li>
+        <li>Kerr ZY, Scarneo-Miller SE, Yeargin SW, et al. <a href="https://doi.org/10.4085/1062-6050-581-18" target="_blank" rel="noopener">"Exertional Heat-Stroke Preparedness in High School Football by Region and State Mandate Presence."</a> <em>Journal of Athletic Training.</em> 2019;54(9):921-928.</li>
+        <li>Roberts WO, Armstrong LE, Sawka MN, et al. <a href="https://doi.org/10.1249/JSR.0000000000000878" target="_blank" rel="noopener">"ACSM Expert Consensus Statement on Exertional Heat Illness: Recognition, Management, and Return to Activity."</a> <em>Current Sports Medicine Reports.</em> 2021;20(9):470-484.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
