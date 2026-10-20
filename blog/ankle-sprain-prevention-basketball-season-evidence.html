@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ankle Sprains and Basketball Season | Ryan Robin MD</title>
+<meta name="description" content="What the research shows about lateral ankle sprain risk in basketball and the evidence for lace-up braces and balance training. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ankle Sprains and Basketball Season: What the Evidence Says About Prevention",
+  "description": "What the research shows about lateral ankle sprain risk in basketball and the evidence for lace-up braces and balance training. General education, not medical advice.",
+  "datePublished": "2026-10-19",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/ankle-sprain-prevention-basketball-season-evidence.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Injury Prevention"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Injury Prevention</div>
+  <h1 class="post-title">Ankle Sprains and Basketball Season: What the Evidence Says About Prevention</h1>
+  <div class="post-meta">October 19, 2026 · 6 min read</div>
+
+  <div class="post-body">
+    <p>As the fall sports season winds down, gyms across the Chicago suburbs are filling up again. Basketball is back at every level, from youth leagues and high school tryouts to the college and professional ranks, and with it comes the injury that sports medicine clinicians see more than any other on the court: the lateral ankle sprain.</p>
+
+    <p>Ankle sprains are often treated as a minor nuisance. The research suggests they deserve more respect than that, and it also offers some of the clearest prevention evidence anywhere in sports medicine. Here's what the literature shows.</p>
+
+    <h2>Why Court Sports Are Hard on Ankles</h2>
+    <p>A large systematic review and meta-analysis pooling 181 prospective studies found that indoor and court sports carried the highest ankle sprain incidence of any sport category. The same analysis found higher rates in females than in males, and in children and adolescents than in adults. Most ankle sprains it captured were lateral sprains, the classic "rolled ankle," as opposed to the less common high-ankle (syndesmotic) or medial varieties.<sup>1</sup></p>
+
+    <p>Basketball combines nearly every mechanism that puts the outside ligaments of the ankle at risk: repeated jumping, landing in traffic, sudden cuts, and the occasional landing on another player's foot. A lateral sprain happens when the foot rolls inward and the ligaments on the outside of the ankle are stretched or torn. (High-ankle sprains are a different injury with a different mechanism and recovery timeline; we covered those in an <a href="/blog/high-ankle-sprain-syndesmosis-injury-explained.html">earlier post</a>.)</p>
+
+    <h2>The Biggest Risk Factor Is a Previous Sprain</h2>
+    <p>Ankle sprains have a well-documented tendency to recur. Some people who sprain an ankle go on to develop chronic ankle instability: repeated giving-way episodes, persistent symptoms, and further sprains. An overview of systematic reviews in the <em>British Journal of Sports Medicine</em> describes recurrence risk after ankle sprain as high, which is why so much prevention research focuses on athletes with a prior injury.<sup>2</sup></p>
+
+    <p>Recovery after a first sprain also appears to matter. A prospective cohort study in the <em>American Journal of Sports Medicine</em> followed people for a year after a first-time lateral ankle sprain. Those who could not complete jumping and landing tasks two weeks after the injury, and those who still had poorer dynamic balance and lower self-reported function at six months, were more likely to develop chronic ankle instability.<sup>3</sup> In other words, "it stopped hurting" and "it's fully recovered" are not always the same thing.</p>
+
+    <h2>Lace-Up Braces: Some of the Strongest Data in Youth Sports</h2>
+    <p>One of the best-known trials in this area came from the University of Wisconsin. Researchers randomized nearly 1,500 high school basketball players from 46 schools to wear lace-up ankle braces for a full season or to play without them. The braced group had roughly one-third the rate of acute ankle injuries seen in the control group. The reduction held both for players with a previous ankle injury and for those without one. Notably, the braces reduced <em>how often</em> injuries happened but did not change how severe they were when they did occur.<sup>4</sup></p>
+
+    <p>Larger evidence summaries point the same direction. The <em>BJSM</em> overview of systematic reviews rated the evidence for bracing in preventing recurrent sprains as strong,<sup>2</sup> and an updated evidence-based clinical guideline concluded that ankle braces should be considered an efficacious option for preventing recurrent lateral ankle sprains.<sup>5</sup> The National Athletic Trainers' Association position statement on ankle sprains also discusses taping and bracing as preventive measures.<sup>6</sup></p>
+
+    <h2>Balance and Neuromuscular Training</h2>
+    <p>Bracing is not the only tool with research behind it. In a Dutch randomized trial published in the <em>BMJ</em>, athletes who had recently sprained an ankle were assigned either usual care alone or usual care plus an eight-week, unsupervised, home-based balance (proprioceptive) training program. Over the following year, recurrent sprains occurred in 22% of the training group compared with 33% of controls, about a 35% reduction in risk. The authors calculated that roughly nine athletes would need to complete the program to prevent one recurrence.<sup>7</sup></p>
+
+    <p>The evidence for <em>first-time</em> sprain prevention with balance training is less clear-cut. A cluster-randomized trial in Canadian high school basketball added a wobble-board balance program to a standard warm-up. It significantly reduced acute-onset injuries overall, but the reduction in ankle sprains specifically did not reach statistical significance. The authors also noted that only about 60% of players reported sticking with the home program.<sup>8</sup> Across the broader literature, the <em>BJSM</em> overview rated neuromuscular training as having moderate evidence for preventing recurrence.<sup>2</sup></p>
+
+    <p>That compliance problem is a recurring theme in prevention research: programs only work if athletes actually do them, which is one reason team-based warm-ups built into practice are often favored over take-home routines.</p>
+
+    <h2>Putting the Evidence Together</h2>
+    <p>Taken as a whole, the research supports a few general conclusions:</p>
+    <ul>
+      <li><strong>Court sports carry real ankle sprain risk</strong>, especially for younger athletes and female athletes.<sup>1</sup></li>
+      <li><strong>A previous sprain is a major warning sign</strong>, and incomplete recovery of balance and landing ability may predict longer-term instability.<sup>2,3</sup></li>
+      <li><strong>Lace-up braces have strong evidence</strong> for reducing how often ankle injuries occur, including in athletes without a prior sprain.<sup>4,5</sup></li>
+      <li><strong>Balance training reduces recurrence after a sprain</strong>, with less certain effects for preventing a first sprain.<sup>2,7,8</sup></li>
+    </ul>
+
+    <p>An ankle that keeps rolling, feels unstable, or never seems to get back to full strength after a sprain is worth having evaluated, whether by an athletic trainer, physical therapist, or a sports medicine physician. In the western Chicago suburbs, that kind of evaluation is available in Schaumburg and Bloomingdale.</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Doherty C, Delahunt E, Caulfield B, Hertel J, Ryan J, Bleakley C. <a href="https://doi.org/10.1007/s40279-013-0102-5" target="_blank" rel="noopener">"The Incidence and Prevalence of Ankle Sprain Injury: A Systematic Review and Meta-Analysis of Prospective Epidemiological Studies."</a> <em>Sports Medicine.</em> 2014;44(1):123-140.</li>
+        <li>Doherty C, Bleakley C, Delahunt E, Holden S. <a href="https://doi.org/10.1136/bjsports-2016-096178" target="_blank" rel="noopener">"Treatment and Prevention of Acute and Recurrent Ankle Sprain: An Overview of Systematic Reviews with Meta-Analysis."</a> <em>British Journal of Sports Medicine.</em> 2017;51(2):113-125.</li>
+        <li>Doherty C, Bleakley C, Hertel J, Caulfield B, Ryan J, Delahunt E. <a href="https://doi.org/10.1177/0363546516628870" target="_blank" rel="noopener">"Recovery From a First-Time Lateral Ankle Sprain and the Predictors of Chronic Ankle Instability: A Prospective Cohort Analysis."</a> <em>American Journal of Sports Medicine.</em> 2016;44(4):995-1003.</li>
+        <li>McGuine TA, Brooks A, Hetzel S. <a href="https://doi.org/10.1177/0363546511406242" target="_blank" rel="noopener">"The Effect of Lace-up Ankle Braces on Injury Rates in High School Basketball Players."</a> <em>American Journal of Sports Medicine.</em> 2011;39(9):1840-1848.</li>
+        <li>Vuurberg G, Hoorntje A, Wink LM, et al. <a href="https://doi.org/10.1136/bjsports-2017-098106" target="_blank" rel="noopener">"Diagnosis, Treatment and Prevention of Ankle Sprains: Update of an Evidence-Based Clinical Guideline."</a> <em>British Journal of Sports Medicine.</em> 2018;52(15):956.</li>
+        <li>Kaminski TW, Hertel J, Amendola N, et al. <a href="https://doi.org/10.4085/1062-6050-48.4.02" target="_blank" rel="noopener">"National Athletic Trainers' Association Position Statement: Conservative Management and Prevention of Ankle Sprains in Athletes."</a> <em>Journal of Athletic Training.</em> 2013;48(4):528-545.</li>
+        <li>Hupperets MDW, Verhagen EALM, van Mechelen W. <a href="https://doi.org/10.1136/bmj.b2684" target="_blank" rel="noopener">"Effect of Unsupervised Home Based Proprioceptive Training on Recurrences of Ankle Sprain: Randomised Controlled Trial."</a> <em>BMJ.</em> 2009;339:b2684.</li>
+        <li>Emery CA, Rose MS, McAllister JR, Meeuwisse WH. <a href="https://doi.org/10.1097/JSM.0b013e31802e9c05" target="_blank" rel="noopener">"A Prevention Strategy to Reduce the Incidence of Injury in High School Basketball: A Cluster Randomized Controlled Trial."</a> <em>Clinical Journal of Sport Medicine.</em> 2007;17(1):17-24.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
