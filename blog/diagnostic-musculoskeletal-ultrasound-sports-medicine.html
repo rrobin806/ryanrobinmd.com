@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Diagnostic Ultrasound in Sports Medicine | Ryan Robin MD</title>
+<meta name="description" content="What diagnostic musculoskeletal ultrasound is, what research shows about its accuracy compared with MRI for rotator cuff tears, and its limitations. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Diagnostic Ultrasound in Sports Medicine: What It Can and Can't Show",
+  "description": "What diagnostic musculoskeletal ultrasound is, what research shows about its accuracy compared with MRI for rotator cuff tears, and its limitations. General education, not medical advice.",
+  "datePublished": "2026-10-23",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/diagnostic-musculoskeletal-ultrasound-sports-medicine.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Sports Medicine Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Sports Medicine Explained</div>
+  <h1 class="post-title">Diagnostic Ultrasound in Sports Medicine: What It Can and Can't Show</h1>
+  <div class="post-meta">October 23, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>Many people associate ultrasound with pregnancy or heart imaging. In sports medicine, ultrasound has become a routine tool for looking at tendons, ligaments, muscles, nerves, and joints, often right in the exam room. Here is what diagnostic musculoskeletal ultrasound is, what the research says about how accurate it is, and where its limits are.</p>
+
+    <h2>What It Is</h2>
+    <p>Musculoskeletal ultrasound uses high-frequency sound waves to create real-time images of soft tissues near the surface of the body. It is widely used by sports medicine physicians, and the American Medical Society for Sports Medicine publishes a formal sports ultrasound curriculum for fellowship training. The curriculum covers both diagnostic scanning and ultrasound-guided procedures, and it includes structured scanning protocols and hands-on training.<sup>1</sup></p>
+
+    <h2>Practical Strengths</h2>
+    <ul>
+      <li><strong>It's real-time and dynamic.</strong> Unlike MRI, ultrasound can image a structure while it moves, for example a tendon gliding or a joint being stressed.</li>
+      <li><strong>It can happen during the visit.</strong> Findings can be correlated directly with where the patient hurts and with the physical exam.</li>
+      <li><strong>No radiation</strong>, and side-to-side comparison with the uninjured limb is quick.</li>
+    </ul>
+
+    <h2>How Accurate Is It? The Rotator Cuff Example</h2>
+    <p>The rotator cuff has been one of the most studied areas. A 2015 systematic review and meta-analysis in the <em>British Journal of Sports Medicine</em> compared ultrasound, MRI, and MR arthrography for rotator cuff disorders. For full-thickness tears, all three had high accuracy, with sensitivity and specificity above 90%. For partial-thickness tears and tendinopathy, specificity remained high, but sensitivity was lower across all three methods. Ultrasound accuracy was similar whether a radiologist, a sonographer, or an orthopaedic surgeon performed it. Considering accuracy, cost, and safety together, the authors concluded that ultrasound was the best option for characterizing rotator cuff disorders.<sup>2</sup></p>
+
+    <p>A Cochrane review reached broadly similar conclusions. It found that MRI, MR arthrography, and ultrasound all have good accuracy for full-thickness tears in people being considered for surgery, but that partial-thickness tears are harder to detect. It also cautioned that many of the underlying studies were small and of limited quality.<sup>3</sup></p>
+
+    <h2>Limitations</h2>
+    <p>Ultrasound can't see through bone and is less suited to deep structures inside a joint. Problems such as bone marrow changes and many cartilage or intra-articular injuries are typically better assessed with MRI. Ultrasound is also operator-dependent, which is why structured training matters.<sup>1</sup> In practice, ultrasound and MRI are complementary tools, and the right test depends on the clinical question.</p>
+
+    <p>Ultrasound is also used to guide injections. We covered that evidence separately in our post on <a href="/blog/ultrasound-guided-vs-landmark-guided-injections.html">ultrasound-guided versus landmark-guided injections</a>.</p>
+
+    <h2>The Bottom Line</h2>
+    <p>Diagnostic ultrasound is a fast, radiation-free imaging tool that is especially useful for superficial soft tissues like tendons.<sup>1,2</sup> For full-thickness rotator cuff tears, research shows accuracy comparable to MRI.<sup>2,3</sup> Like any test, it has blind spots, and it works best alongside a careful history and exam.</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Hall MM, Bernhardt D, Finnoff JT, et al. <a href="https://doi.org/10.1136/bjsports-2021-103915" target="_blank" rel="noopener">"American Medical Society for Sports Medicine Sports Ultrasound Curriculum for Sports Medicine Fellowships."</a> <em>British Journal of Sports Medicine.</em> 2022;56(3):127-137.</li>
+        <li>Roy JS, Bra&euml;n C, Leblond J, et al. <a href="https://doi.org/10.1136/bjsports-2014-094148" target="_blank" rel="noopener">"Diagnostic Accuracy of Ultrasonography, MRI and MR Arthrography in the Characterisation of Rotator Cuff Disorders: A Systematic Review and Meta-Analysis."</a> <em>British Journal of Sports Medicine.</em> 2015;49(20):1316-1328.</li>
+        <li>Lenza M, Buchbinder R, Takwoingi Y, et al. <a href="https://doi.org/10.1002/14651858.CD009020.pub2" target="_blank" rel="noopener">"Magnetic Resonance Imaging, Magnetic Resonance Arthrography and Ultrasonography for Assessing Rotator Cuff Tears in People with Shoulder Pain for Whom Surgery Is Being Considered."</a> <em>Cochrane Database of Systematic Reviews.</em> 2013;(9):CD009020.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>

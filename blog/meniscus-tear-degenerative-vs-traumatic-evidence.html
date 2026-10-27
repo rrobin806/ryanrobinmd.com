@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Meniscus Tears | Ryan Robin MD</title>
+<meta name="description" content="An explainer on traumatic versus degenerative meniscus tears, how common tears are on MRI without symptoms, and what randomized trials show about surgery versus exercise. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Meniscus Tears: Why Age and Tear Type Change the Conversation",
+  "description": "An explainer on traumatic versus degenerative meniscus tears, how common tears are on MRI without symptoms, and what randomized trials show about surgery versus exercise. General education, not medical advice.",
+  "datePublished": "2026-10-21",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/meniscus-tear-degenerative-vs-traumatic-evidence.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Common Injuries Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Common Injuries Explained</div>
+  <h1 class="post-title">Meniscus Tears: Why Age and Tear Type Change the Conversation</h1>
+  <div class="post-meta">October 21, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>"You have a meniscus tear" can sound like a clear-cut diagnosis with an obvious fix. But meniscus tears come in different types, and the right approach often depends on the person's age, how the tear happened, and what the rest of the knee looks like. Over the past decade, several high-quality trials have changed how sports medicine thinks about one common type in particular: the degenerative tear.</p>
+
+    <h2>What Is the Meniscus?</h2>
+    <p>Each knee has two menisci: C-shaped pads of fibrocartilage between the thigh bone and the shin bone. They help distribute load and add stability. Tears generally fall into two broad groups. <strong>Traumatic tears</strong> usually happen in younger, active people during a twisting or pivoting injury. <strong>Degenerative tears</strong> develop gradually with age-related wear, often without a specific injury.</p>
+
+    <h2>Tears Are Common, Even Without Pain</h2>
+    <p>A study in the <em>New England Journal of Medicine</em> performed knee MRIs on a community sample of middle-aged and older adults. The prevalence of meniscal tears ranged from 19% in women aged 50 to 59 to 56% in men aged 70 to 90. Notably, 61% of the people who had a tear on MRI reported no knee pain, aching, or stiffness in the previous month.<sup>1</sup> In other words, finding a degenerative tear on an MRI does not automatically explain someone's symptoms.</p>
+
+    <h2>What Trials Show About Degenerative Tears</h2>
+    <p>Three well-known randomized trials have examined arthroscopic partial meniscectomy (trimming the torn portion) for degenerative tears:</p>
+    <ul>
+      <li><strong>Surgery vs. sham surgery:</strong> A Finnish trial randomized 146 patients aged 35 to 65 with symptoms of a degenerative medial meniscus tear and no knee arthritis. They received either partial meniscectomy or a sham procedure. At 12 months, both groups improved substantially, with no significant difference between them.<sup>2</sup></li>
+      <li><strong>Surgery vs. physical therapy with arthritis present:</strong> In the METEOR trial, 351 patients with a meniscal tear and mild-to-moderate knee osteoarthritis were randomized to surgery plus physical therapy or to physical therapy alone. Functional improvement at six months was similar. About 30% of the physical therapy group crossed over to surgery within six months.<sup>3</sup></li>
+      <li><strong>Surgery vs. exercise therapy:</strong> A Norwegian trial randomized 140 middle-aged adults with a degenerative medial meniscus tear to 12 weeks of supervised exercise or to partial meniscectomy. At two years, there was no clinically relevant difference in knee outcomes. Thigh strength improved more in the exercise group at three months.<sup>4</sup></li>
+    </ul>
+
+    <h2>What About Traumatic Tears in Young Athletes?</h2>
+    <p>The trials above studied middle-aged patients with degenerative tears, so their conclusions don't automatically apply to a young athlete with an acute tear from a pivoting injury. Those cases involve different considerations, including whether a tear can be repaired, whether the knee locks or catches mechanically, and whether other structures such as the ACL are also injured.</p>
+
+    <h2>The Bottom Line</h2>
+    <p>Meniscus tears are common on MRI in middle-aged and older adults, even in people without pain.<sup>1</sup> For degenerative tears, multiple randomized trials have found that structured exercise or physical therapy produces outcomes similar to arthroscopic trimming for many patients.<sup>2&ndash;4</sup> For that reason, guided exercise is commonly offered as a first-line option.</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Englund M, Guermazi A, Gale D, et al. <a href="https://doi.org/10.1056/NEJMoa0800777" target="_blank" rel="noopener">"Incidental Meniscal Findings on Knee MRI in Middle-Aged and Elderly Persons."</a> <em>New England Journal of Medicine.</em> 2008;359(11):1108-1115.</li>
+        <li>Sihvonen R, Paavola M, Malmivaara A, et al. <a href="https://doi.org/10.1056/NEJMoa1305189" target="_blank" rel="noopener">"Arthroscopic Partial Meniscectomy versus Sham Surgery for a Degenerative Meniscal Tear."</a> <em>New England Journal of Medicine.</em> 2013;369(26):2515-2524.</li>
+        <li>Katz JN, Brophy RH, Chaisson CE, et al. <a href="https://doi.org/10.1056/NEJMoa1301408" target="_blank" rel="noopener">"Surgery versus Physical Therapy for a Meniscal Tear and Osteoarthritis."</a> <em>New England Journal of Medicine.</em> 2013;368(18):1675-1684.</li>
+        <li>Kise NJ, Risberg MA, Stensrud S, et al. <a href="https://doi.org/10.1136/bmj.i3740" target="_blank" rel="noopener">"Exercise Therapy versus Arthroscopic Partial Meniscectomy for Degenerative Meniscal Tear in Middle Aged Patients: Randomised Controlled Trial with Two Year Follow-Up."</a> <em>BMJ.</em> 2016;354:i3740.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
