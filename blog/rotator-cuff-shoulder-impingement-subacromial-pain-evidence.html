@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shoulder Impingement and Rotator Cuff Pain | Ryan Robin MD</title>
+<meta name="description" content="An explainer on subacromial pain syndrome (shoulder impingement and rotator cuff tendinopathy), what placebo-controlled surgical trials found, and what conservative treatment evidence shows. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Shoulder Impingement and Rotator Cuff Pain: What the Evidence Says",
+  "description": "An explainer on subacromial pain syndrome (shoulder impingement and rotator cuff tendinopathy), what placebo-controlled surgical trials found, and what conservative treatment evidence shows. General education, not medical advice.",
+  "datePublished": "2026-10-30",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/rotator-cuff-shoulder-impingement-subacromial-pain-evidence.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Common Injuries Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Common Injuries Explained</div>
+  <h1 class="post-title">Shoulder Impingement and Rotator Cuff Pain: What the Evidence Says</h1>
+  <div class="post-meta">October 30, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>Shoulder pain that flares when you reach overhead, sleep on that side, or lift something away from your body is one of the most common reasons people see a sports medicine physician. It goes by several names: "shoulder impingement," "rotator cuff tendinopathy," or, more recently, <strong>subacromial pain syndrome</strong>. The research on how it is best managed has changed considerably over the last decade.</p>
+
+    <h2>What It Is</h2>
+    <p>The rotator cuff is a group of four muscles and tendons that stabilize and move the shoulder. Subacromial pain syndrome describes pain arising from the area around the rotator cuff tendons and the bursa beneath the acromion, the bony tip at the top of the shoulder. The older term "impingement" suggested the tendons were being pinched by bone. That mechanical explanation has been increasingly questioned, partly because of the surgical trials described below.</p>
+
+    <h2>Rotator Cuff Changes Are Common With Age</h2>
+    <p>A systematic review pooled imaging data from more than 6,000 shoulders. Rotator cuff abnormalities increased steadily with age, from about 10% in people 20 and younger to 62% in people 80 and older. The pattern was similar in people with and without symptoms. The authors concluded that rotator cuff degeneration can be considered a common part of normal aging, which makes it hard to know whether an imaging finding is actually the cause of someone's pain.<sup>1</sup></p>
+
+    <h2>What Placebo-Controlled Surgical Trials Showed</h2>
+    <p>For years, a common operation for persistent shoulder pain was arthroscopic subacromial decompression: shaving bone and soft tissue to "make more room" for the tendons. Two large trials tested this against placebo (diagnostic arthroscopy without the decompression step):</p>
+    <ul>
+      <li><strong>CSAW (UK):</strong> 313 patients who still had pain after exercise therapy and at least one steroid injection were randomized to decompression, arthroscopy only, or no treatment. At six months, decompression was no better than arthroscopy only. Both surgical groups did slightly better than no treatment, but the difference was not clinically important.<sup>2</sup></li>
+      <li><strong>FIMPACT (Finland):</strong> 210 patients were randomized to decompression, diagnostic arthroscopy, or exercise therapy. At two years, decompression provided no benefit over diagnostic arthroscopy.<sup>3</sup></li>
+    </ul>
+    <p>Based on these trials, a 2019 <em>BMJ</em> clinical practice guideline panel of patients, clinicians, and methodologists made a strong recommendation <em>against</em> subacromial decompression surgery for subacromial pain syndrome. The panel also noted that there is still substantial uncertainty about which alternative treatment is best.<sup>4</sup></p>
+
+    <h2>What Non-Surgical Evidence Shows</h2>
+    <p>A 2017 systematic review and meta-analysis in the <em>British Journal of Sports Medicine</em> examined conservative treatments for shoulder impingement. Its findings:<sup>5</sup></p>
+    <ul>
+      <li><strong>Exercise</strong> reduced pain compared with non-exercise controls, and <strong>specific</strong> shoulder exercises outperformed generic ones.</li>
+      <li><strong>Corticosteroid injections</strong> were superior to no treatment, and <strong>ultrasound-guided</strong> injections outperformed non-guided ones.</li>
+      <li><strong>NSAIDs</strong> and <strong>manual therapy</strong> showed small to moderate benefits compared with placebo.</li>
+    </ul>
+    <p>The authors cautioned that much of the evidence was low quality. Even so, they concluded that exercise should be considered for people with these symptoms.<sup>5</sup></p>
+
+    <h2>The Bottom Line</h2>
+    <p>Rotator cuff changes on imaging are common with age and don't always explain pain.<sup>1</sup> Placebo-controlled trials have shown that a once-routine "decompression" surgery offers no meaningful benefit over placebo for subacromial pain.<sup>2&ndash;4</sup> Structured, specific exercise is the treatment with the most consistent support, and injections and other therapies play a supporting role for some people.<sup>5</sup> (These findings apply to subacromial pain, not to acute traumatic rotator cuff tears, which raise different questions.)</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Teunis T, Lubberts B, Reilly BT, Ring D. <a href="https://doi.org/10.1016/j.jse.2014.08.001" target="_blank" rel="noopener">"A Systematic Review and Pooled Analysis of the Prevalence of Rotator Cuff Disease with Increasing Age."</a> <em>Journal of Shoulder and Elbow Surgery.</em> 2014;23(12):1913-1921.</li>
+        <li>Beard DJ, Rees JL, Cook JA, et al. <a href="https://doi.org/10.1016/S0140-6736(17)32457-1" target="_blank" rel="noopener">"Arthroscopic Subacromial Decompression for Subacromial Shoulder Pain (CSAW): A Multicentre, Pragmatic, Parallel Group, Placebo-Controlled, Three-Group, Randomised Surgical Trial."</a> <em>The Lancet.</em> 2018;391(10118):329-338.</li>
+        <li>Paavola M, Malmivaara A, Taimela S, et al. <a href="https://doi.org/10.1136/bmj.k2860" target="_blank" rel="noopener">"Subacromial Decompression versus Diagnostic Arthroscopy for Shoulder Impingement: Randomised, Placebo Surgery Controlled Clinical Trial."</a> <em>BMJ.</em> 2018;362:k2860.</li>
+        <li>Vandvik PO, L&auml;hdeoja T, Ardern C, et al. <a href="https://doi.org/10.1136/bmj.l294" target="_blank" rel="noopener">"Subacromial Decompression Surgery for Adults with Shoulder Pain: A Clinical Practice Guideline."</a> <em>BMJ.</em> 2019;364:l294.</li>
+        <li>Steuri R, Sattelmayer M, Elsig S, et al. <a href="https://doi.org/10.1136/bjsports-2016-096515" target="_blank" rel="noopener">"Effectiveness of Conservative Interventions Including Exercise, Manual Therapy and Medical Management in Adults with Shoulder Impingement: A Systematic Review and Meta-Analysis of RCTs."</a> <em>British Journal of Sports Medicine.</em> 2017;51(18):1340-1347.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
