@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lateral Hip Pain | Ryan Robin MD</title>
+<meta name="description" content="An explainer on greater trochanteric pain syndrome (often called hip bursitis), why it is now understood mainly as gluteal tendinopathy, and what the LEAP trial showed about exercise versus injection. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Lateral Hip Pain: Why \"Hip Bursitis\" Is Usually Gluteal Tendinopathy",
+  "description": "An explainer on greater trochanteric pain syndrome (often called hip bursitis), why it is now understood mainly as gluteal tendinopathy, and what the LEAP trial showed about exercise versus injection. General education, not medical advice.",
+  "datePublished": "2026-11-09",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/lateral-hip-pain-gluteal-tendinopathy-hip-bursitis.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Common Injuries Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Common Injuries Explained</div>
+  <h1 class="post-title">Lateral Hip Pain: Why "Hip Bursitis" Is Usually Gluteal Tendinopathy</h1>
+  <div class="post-meta">November 9, 2026 · 4 min read</div>
+
+  <div class="post-body">
+    <p>Pain on the outside of the hip, the kind that makes it hard to lie on that side at night or climb stairs, is often called "hip bursitis." Over the past decade, research has reframed this common condition. The current understanding changes how it is treated.</p>
+
+    <h2>Not Usually "Bursitis" After All</h2>
+    <p>Lateral hip pain of this kind is now commonly called <strong>greater trochanteric pain syndrome (GTPS)</strong>. The greater trochanter is the bony prominence on the outside of the upper thigh bone. A 2015 clinical commentary in the <em>Journal of Orthopaedic &amp; Sports Physical Therapy</em> notes that <strong>gluteal tendinopathy</strong> is now believed to be the main local source of this pain. It involves the tendons of the gluteus medius and minimus muscles, which attach at the greater trochanter. That is a shift from the older label of trochanteric bursitis. The authors also describe the condition as particularly common in postmenopausal women and note that it can significantly affect quality of life.<sup>1</sup> (For background on why tendon pain is often not primarily inflammatory, see our post on <a href="/blog/understanding-tendinopathy-tendinitis-wrong-word.html">tendinopathy</a>.)</p>
+
+    <h2>How Common Is It?</h2>
+    <p>A U.S. population-based study examined more than 3,000 community-dwelling adults aged 50 to 79. GTPS affected about 15% of women on one side and 8.5% on both sides, compared with 6.6% and 1.9% of men. GTPS was also associated with low back pain and with knee osteoarthritis. People with GTPS on both sides walked and rose from a chair more slowly.<sup>2</sup></p>
+
+    <h2>What a Randomized Trial Showed</h2>
+    <p>The LEAP trial, published in the <em>BMJ</em>, randomized 204 people aged 35 to 70 with MRI-confirmed gluteal tendinopathy to one of three approaches:<sup>3</sup></p>
+    <ul>
+      <li><strong>Education plus exercise:</strong> 14 physiotherapy sessions over eight weeks, focused on load management education and a progressive exercise program.</li>
+      <li><strong>A single corticosteroid injection.</strong></li>
+      <li><strong>Wait and see.</strong></li>
+    </ul>
+    <p>At eight weeks, both active treatments outperformed wait-and-see. Education plus exercise did better than the injection on both global improvement and pain. At one year, education plus exercise still led to more people reporting overall improvement than the injection (about 78% versus 57%), although pain scores were similar between the two treatment groups.<sup>3</sup></p>
+
+    <h2>Why "Load Management" Matters</h2>
+    <p>The education in the LEAP trial focused on reducing positions and activities that compress the gluteal tendons against the bone. Examples include crossing the legs, sitting in low chairs, and standing with weight shifted onto one hip. The exercise component progressively strengthened the hip muscles.<sup>1,3</sup> The idea is to reduce irritating loads while gradually building the tendon's capacity.</p>
+
+    <h2>The Bottom Line</h2>
+    <p>"Hip bursitis" is usually better understood as gluteal tendinopathy, a common source of lateral hip pain, especially in women over 50.<sup>1,2</sup> In a high-quality randomized trial, education plus a structured exercise program outperformed a corticosteroid injection for overall improvement, both in the short term and at one year.<sup>3</sup></p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Grimaldi A, Fearon A. <a href="https://doi.org/10.2519/jospt.2015.5829" target="_blank" rel="noopener">"Gluteal Tendinopathy: Integrating Pathomechanics and Clinical Features in Its Management."</a> <em>Journal of Orthopaedic &amp; Sports Physical Therapy.</em> 2015;45(11):910-922.</li>
+        <li>Segal NA, Felson DT, Torner JC, et al. <a href="https://doi.org/10.1016/j.apmr.2007.04.014" target="_blank" rel="noopener">"Greater Trochanteric Pain Syndrome: Epidemiology and Associated Factors."</a> <em>Archives of Physical Medicine and Rehabilitation.</em> 2007;88(8):988-992.</li>
+        <li>Mellor R, Bennell K, Grimaldi A, et al. <a href="https://doi.org/10.1136/bmj.k1662" target="_blank" rel="noopener">"Education plus Exercise versus Corticosteroid Injection Use versus a Wait and See Approach on Global Outcome and Pain from Gluteal Tendinopathy: Prospective, Single Blinded, Randomised Clinical Trial."</a> <em>BMJ.</em> 2018;361:k1662.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
