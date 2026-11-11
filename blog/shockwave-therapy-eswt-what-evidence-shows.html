@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Shockwave Therapy (ESWT) | Ryan Robin MD</title>
+<meta name="description" content="An evidence-based look at extracorporeal shockwave therapy: strong placebo-controlled evidence for calcific shoulder tendinitis, little benefit for tennis elbow, and mixed results for lower-limb tendon problems. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Shockwave Therapy (ESWT): What the Evidence Actually Shows",
+  "description": "An evidence-based look at extracorporeal shockwave therapy: strong placebo-controlled evidence for calcific shoulder tendinitis, little benefit for tennis elbow, and mixed results for lower-limb tendon problems. General education, not medical advice.",
+  "datePublished": "2026-11-11",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/shockwave-therapy-eswt-what-evidence-shows.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Sports Medicine Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Sports Medicine Explained</div>
+  <h1 class="post-title">Shockwave Therapy (ESWT): What the Evidence Actually Shows</h1>
+  <div class="post-meta">November 11, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>Extracorporeal shockwave therapy (ESWT) is offered at many sports medicine and physical therapy clinics for stubborn tendon and soft-tissue problems. As with many treatments, the honest answer to "does it work?" is that it depends on the condition. The quality of the evidence also varies a lot from one problem to the next.</p>
+
+    <h2>What Is Shockwave Therapy?</h2>
+    <p>ESWT delivers pulses of acoustic (sound) energy through the skin to a painful area. It is usually given over a few sessions. There are two broad types: <strong>focused</strong> shockwave, which concentrates energy at a specific depth, and <strong>radial</strong> shockwave, which spreads energy more superficially. Trials differ in which type, energy level, and number of sessions they use, which is one reason results vary between studies.<sup>3</sup></p>
+
+    <h2>Where the Evidence Is Strongest: Calcific Shoulder Tendinitis</h2>
+    <p>Calcific tendinitis involves calcium deposits in the rotator cuff tendons. A double-blind, placebo-controlled trial in <em>JAMA</em> randomized 144 patients with chronic calcific tendinitis to high-energy ESWT, low-energy ESWT, or sham treatment, all followed by physical therapy. At six months, both ESWT groups had significantly greater improvement in shoulder function than sham, with high-energy treatment doing best. The ESWT groups also had less pain and smaller calcium deposits on X-ray. Results were similar at 3 and 12 months.<sup>1</sup></p>
+
+    <h2>Where It Hasn't Held Up: Tennis Elbow</h2>
+    <p>A Cochrane systematic review pooled nine placebo-controlled trials involving more than 1,000 people with lateral elbow pain (tennis elbow). Eleven of 13 pooled analyses found no significant benefit of ESWT over placebo. The authors concluded that there was high-level evidence that shockwave therapy provides little or no benefit for pain and function in this condition. Side effects were generally minor and temporary, such as pain during treatment and skin reddening.<sup>2</sup></p>
+
+    <h2>Lower-Limb Tendon Problems: Mixed and Low-Quality Evidence</h2>
+    <p>A 2018 systematic review in the <em>British Journal of Sports Medicine</em> looked at ESWT for several common lower-limb conditions:<sup>3</sup></p>
+    <ul>
+      <li><strong>Patellar tendinopathy (jumper's knee):</strong> moderate-level evidence found no difference between focused ESWT and placebo in the short to mid term.</li>
+      <li><strong>Proximal hamstring tendinopathy:</strong> moderate-level evidence that radial ESWT outperformed conservative treatment.</li>
+      <li><strong>Achilles tendinopathy:</strong> low-level evidence that ESWT was comparable to eccentric exercise for mid-portion pain, and possibly better for insertional pain.</li>
+      <li><strong>Lateral hip pain (GTPS):</strong> low-level evidence that ESWT was less effective than a steroid injection in the short term but did better at mid and long term.</li>
+    </ul>
+    <p>The review noted that many of the included studies had a high risk of bias, and its overall conclusion was cautious: low-level evidence suggests ESWT may be effective for some lower-limb conditions.<sup>3</sup> (For heel pain specifically, see our earlier post on <a href="/blog/plantar-fasciitis-heel-pain-evidence-based-care.html">plantar fasciitis</a>, and for lateral hip pain, our post on <a href="/blog/lateral-hip-pain-gluteal-tendinopathy-hip-bursitis.html">gluteal tendinopathy</a>.)</p>
+
+    <h2>The Bottom Line</h2>
+    <p>Shockwave therapy has good placebo-controlled evidence for calcific shoulder tendinitis.<sup>1</sup> It has strong evidence of little or no benefit for tennis elbow.<sup>2</sup> For several lower-limb tendon problems, the evidence is mixed and generally low quality.<sup>3</sup> Like most treatments for tendon pain, it is typically used alongside, not instead of, a structured rehabilitation program.</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Gerdesmeyer L, Wagenpfeil S, Haake M, et al. <a href="https://doi.org/10.1001/jama.290.19.2573" target="_blank" rel="noopener">"Extracorporeal Shock Wave Therapy for the Treatment of Chronic Calcifying Tendonitis of the Rotator Cuff: A Randomized Controlled Trial."</a> <em>JAMA.</em> 2003;290(19):2573-2580.</li>
+        <li>Buchbinder R, Green SE, Youd JM, et al. <a href="https://doi.org/10.1002/14651858.CD003524.pub2" target="_blank" rel="noopener">"Shock Wave Therapy for Lateral Elbow Pain."</a> <em>Cochrane Database of Systematic Reviews.</em> 2005;(4):CD003524.</li>
+        <li>Korakakis V, Whiteley R, Tzavara A, Malliaropoulos N. <a href="https://doi.org/10.1136/bjsports-2016-097347" target="_blank" rel="noopener">"The Effectiveness of Extracorporeal Shockwave Therapy in Common Lower Limb Conditions: A Systematic Review Including Quantification of Patient-Rated Pain Reduction."</a> <em>British Journal of Sports Medicine.</em> 2018;52(6):387-407.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
