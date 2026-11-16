@@ -250,4 +250,10 @@
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://ryanrobinmd.com/blog/ski-snowboard-injury-prevention-helmets-wrist-guards.html</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
