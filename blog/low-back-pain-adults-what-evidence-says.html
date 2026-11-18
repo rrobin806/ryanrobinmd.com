@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Low Back Pain in Adults | Ryan Robin MD</title>
+<meta name="description" content="Why most low back pain has no single structural cause, why disc changes on MRI are common even without pain, and what major guidelines recommend for treatment. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Low Back Pain in Adults: What the Evidence Says About Causes, Imaging, and Treatment",
+  "description": "Why most low back pain has no single structural cause, why disc changes on MRI are common even without pain, and what major guidelines recommend for treatment. General education, not medical advice.",
+  "datePublished": "2026-11-18",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/low-back-pain-adults-what-evidence-says.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "Common Injuries Explained"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">Common Injuries Explained</div>
+  <h1 class="post-title">Low Back Pain in Adults: What the Evidence Says About Causes, Imaging, and Treatment</h1>
+  <div class="post-meta">November 18, 2026 · 5 min read</div>
+
+  <div class="post-body">
+    <p>Low back pain is one of the most common reasons adults see any doctor, including sports medicine physicians. It is also one of the most misunderstood conditions. In 2018, <em>The Lancet</em> published a series summarizing the global evidence. Its conclusions may surprise people who assume back pain means something is "damaged."</p>
+
+    <h2>Extremely Common, Usually Without a Specific Cause</h2>
+    <p>According to the first paper in that series, low back pain is now the leading cause of disability worldwide. For nearly all people with low back pain, no specific structural cause of the pain can be identified. Only a small proportion have a well-understood underlying cause, such as a fracture, infection, or cancer. Most people with a new episode recover quickly, although recurrences are common. A small proportion develop persistent, disabling pain. High initial pain intensity, psychological distress, and pain in multiple body sites are associated with a higher risk of that happening.<sup>1</sup></p>
+
+    <h2>Why "Abnormal" Imaging Often Isn't</h2>
+    <p>A Mayo Clinic-led systematic review looked at spine CT and MRI findings in more than 3,100 people with <em>no</em> back pain. "Degenerative" findings were very common and increased steadily with age:<sup>2</sup></p>
+    <ul>
+      <li><strong>Disc degeneration:</strong> 37% of 20-year-olds, rising to 96% of 80-year-olds.</li>
+      <li><strong>Disc bulges:</strong> 30% at age 20, rising to 84% at age 80.</li>
+      <li><strong>Disc protrusions:</strong> 29% at age 20, rising to 43% at age 80.</li>
+    </ul>
+    <p>The authors concluded that many of these findings are likely part of normal aging and unrelated to pain. They should be interpreted in the context of a person's symptoms and exam.<sup>2</sup> This is a major reason guidelines discourage routine imaging for most back pain without warning signs.<sup>3</sup></p>
+
+    <h2>What Guidelines Recommend</h2>
+    <p>The second <em>Lancet</em> paper notes that clinical guidelines around the world are broadly consistent. They recommend education that supports self-management, staying active and resuming normal activities, and exercise, with psychological approaches added for people with persistent symptoms. They advise prudent use of medications, imaging, and surgery. The authors also documented a gap between this evidence and real-world practice, with overuse of imaging, rest, opioids, spinal injections, and surgery.<sup>3</sup></p>
+
+    <p>The American College of Physicians guideline is similar:<sup>4</sup></p>
+    <ul>
+      <li><strong>Acute or subacute back pain:</strong> most people improve over time regardless of treatment. Non-drug options such as superficial heat, massage, acupuncture, or spinal manipulation are recommended first. If medication is wanted, NSAIDs or muscle relaxants are suggested.</li>
+      <li><strong>Chronic back pain:</strong> non-drug treatments come first, including exercise, multidisciplinary rehabilitation, mindfulness-based stress reduction, tai chi, yoga, and cognitive behavioral therapy. Opioids should be considered only after other treatments have failed, and only when benefits outweigh risks.</li>
+    </ul>
+
+    <h2>The Bottom Line</h2>
+    <p>Low back pain is extremely common, and it rarely has a single identifiable structural cause.<sup>1</sup> Disc changes on imaging are common even in people without pain.<sup>2</sup> Guidelines consistently emphasize staying active, exercise, and education first.<sup>3,4</sup> Back pain with warning signs is different and needs prompt medical evaluation. Examples include significant weakness, numbness in the groin area, new bladder or bowel changes, fever, unexplained weight loss, or a history of cancer. (For back pain in teenage athletes, see our post on <a href="/blog/spondylolysis-low-back-pain-young-athletes.html">spondylolysis</a>.)</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Hartvigsen J, Hancock MJ, Kongsted A, et al. <a href="https://doi.org/10.1016/S0140-6736(18)30480-X" target="_blank" rel="noopener">"What Low Back Pain Is and Why We Need to Pay Attention."</a> <em>The Lancet.</em> 2018;391(10137):2356-2367.</li>
+        <li>Brinjikji W, Luetmer PH, Comstock B, et al. <a href="https://doi.org/10.3174/ajnr.A4173" target="_blank" rel="noopener">"Systematic Literature Review of Imaging Features of Spinal Degeneration in Asymptomatic Populations."</a> <em>American Journal of Neuroradiology.</em> 2015;36(4):811-816.</li>
+        <li>Foster NE, Anema JR, Cherkin D, et al. <a href="https://doi.org/10.1016/S0140-6736(18)30489-6" target="_blank" rel="noopener">"Prevention and Treatment of Low Back Pain: Evidence, Challenges, and Promising Directions."</a> <em>The Lancet.</em> 2018;391(10137):2368-2383.</li>
+        <li>Qaseem A, Wilt TJ, McLean RM, et al. <a href="https://doi.org/10.7326/M16-2367" target="_blank" rel="noopener">"Noninvasive Treatments for Acute, Subacute, and Chronic Low Back Pain: A Clinical Practice Guideline From the American College of Physicians."</a> <em>Annals of Internal Medicine.</em> 2017;166(7):514-530.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
