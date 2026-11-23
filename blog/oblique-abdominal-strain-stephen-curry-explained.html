@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Stephen Curry's Oblique Tear | Ryan Robin MD</title>
+<meta name="description" content="Stephen Curry suffered an oblique abdominal tear against the Rockets. What the oblique muscles do, what research in professional baseball shows about oblique strains, and how recovery typically works. General education, not medical advice." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --navy: #0a1628;
+    --navy-mid: #132040;
+    --gold: #c8a96e;
+    --gold-light: #e8d5b0;
+    --cream: #f8f4ef;
+    --white: #ffffff;
+    --text-dark: #1a1a2e;
+    --text-mid: #4a5568;
+    --text-light: #718096;
+    --border: rgba(200, 169, 110, 0.2);
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--font-body); color: var(--text-dark); background: var(--cream); line-height: 1.7; }
+
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    background: rgba(10, 22, 40, 0.97); backdrop-filter: blur(12px);
+    padding: 0 4rem; display: flex; align-items: center; justify-content: space-between; height: 72px;
+  }
+  .nav-brand { font-family: var(--font-display); color: var(--white); font-size: 1.2rem; text-decoration: none; font-weight: 600; }
+  .nav-brand span { color: var(--gold); }
+  .nav-links { list-style: none; display: flex; align-items: center; gap: 2.5rem; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.9rem; letter-spacing: 0.02em; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta { background: var(--gold); color: var(--navy) !important; padding: 0.55rem 1.3rem; border-radius: 2px; font-weight: 500; }
+  .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
+  @media (max-width: 960px) { .nav-links { display: none; } nav { padding: 0 1.5rem; } }
+
+  main { max-width: 760px; margin: 0 auto; padding: 11rem 1.5rem 6rem; }
+
+  .post-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 1.25rem; font-weight: 400;
+  }
+  .post-eyebrow::before { content: ''; display: block; width: 24px; height: 1px; background: var(--gold); }
+
+  .post-title {
+    font-family: var(--font-display); font-size: clamp(1.9rem, 4vw, 2.7rem);
+    font-weight: 600; color: var(--text-dark); line-height: 1.25; margin-bottom: 1rem;
+  }
+  .post-meta { color: var(--text-light); font-size: 0.88rem; margin-bottom: 3rem; }
+
+  .post-body h2 {
+    font-family: var(--font-display); font-size: 1.4rem; font-weight: 600;
+    color: var(--text-dark); margin: 2.5rem 0 1rem;
+  }
+  .post-body p { color: var(--text-mid); margin-bottom: 1.25rem; font-size: 1.02rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+  .post-body strong { color: var(--text-dark); }
+
+  .disclaimer {
+    background: var(--white); border: 1px solid var(--border); border-radius: 4px;
+    padding: 1.25rem 1.5rem; margin: 2.5rem 0; font-size: 0.9rem; color: var(--text-light);
+  }
+
+  .sources {
+    margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);
+  }
+  .sources h3 {
+    font-family: var(--font-display); font-size: 1.1rem; color: var(--text-dark); margin-bottom: 1rem;
+  }
+  .sources ol { margin-left: 1.4rem; color: var(--text-mid); font-size: 0.92rem; }
+  .sources li { margin-bottom: 0.6rem; }
+  .sources a { color: var(--navy-mid); }
+
+  .back-link { display: inline-block; margin-top: 3rem; color: var(--navy-mid); font-size: 0.9rem; text-decoration: none; }
+  .back-link:hover { color: var(--gold); }
+
+  footer { background: var(--navy); padding: 3rem 2rem; margin-top: 4rem; }
+  .footer-inner { max-width: 1100px; margin: 0 auto; text-align: center; }
+  .footer-brand { font-family: var(--font-display); color: var(--white); font-size: 1.3rem; margin-bottom: 0.5rem; }
+  .footer-brand span { color: var(--gold); }
+  .footer-tagline { color: rgba(255,255,255,0.6); font-size: 0.85rem; margin-bottom: 1.5rem; }
+  .footer-links { display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .footer-links a { color: rgba(255,255,255,0.75); text-decoration: none; font-size: 0.85rem; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-copy { color: rgba(255,255,255,0.4); font-size: 0.78rem; }
+  .post-body ul { color: var(--text-mid); margin: 0 0 1.25rem 1.4rem; }
+  .post-body li { margin-bottom: 0.5rem; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Stephen Curry's Oblique Tear: Understanding Oblique and Core Muscle Strains",
+  "description": "Stephen Curry suffered an oblique abdominal tear against the Rockets. What the oblique muscles do, what research in professional baseball shows about oblique strains, and how recovery typically works. General education, not medical advice.",
+  "datePublished": "2026-11-23",
+  "author": {
+    "@type": "Person",
+    "name": "Ryan Robin, MD",
+    "url": "https://ryanrobinmd.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ryan Robin MD",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ryanrobinmd.com/preview.jpg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://ryanrobinmd.com/blog/oblique-abdominal-strain-stephen-curry-explained.html"
+  },
+  "image": "https://ryanrobinmd.com/preview.jpg",
+  "articleSection": "In The News"
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="/">Ryan Robin <span>MD</span></a>
+  <ul class="nav-links">
+    <li><a href="/#about">About</a></li>
+    <li><a href="/#specialties">Specialties</a></li>
+    <li><a href="/blog/">Blog</a></li>
+    <li><a href="/#locations">Locations</a></li>
+    <li><a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<main>
+  <div class="post-eyebrow">In The News</div>
+  <h1 class="post-title">Stephen Curry's Oblique Tear: Understanding Oblique and Core Muscle Strains</h1>
+  <div class="post-meta">November 23, 2026 · 4 min read</div>
+
+  <div class="post-body">
+    <p>Golden State Warriors guard Stephen Curry left the team's November 11 game against the Houston Rockets early in the first quarter. He grimaced after releasing a three-pointer and headed to the locker room. According to NBC Sports, the Warriors announced after an MRI that Curry had suffered an oblique abdominal tear and would be re-evaluated in two weeks. Coach Steve Kerr said Curry described it as a tweak in his abdomen and side, something he hadn't felt before.<sup>1</sup></p>
+
+    <p>We can't speak to any individual's injury beyond what has been publicly reported. But oblique strains are a well-recognized injury in sports that involve powerful twisting, so here is what the research says in general.</p>
+
+    <h2>What Are the Obliques?</h2>
+    <p>The side of the abdominal wall is made up of three layers of muscle: the <strong>external oblique</strong>, the <strong>internal oblique</strong>, and the deepest layer, the <strong>transversus abdominis</strong>. Each runs in a different direction and has a different function. Together they stretch between the lower ribs and the pelvis.<sup>2</sup> These muscles help rotate and stabilize the trunk. They transfer force from the legs and hips through the core to the arms during throwing, swinging, and shooting.</p>
+
+    <h2>What the Baseball Research Shows</h2>
+    <p>Most of the research on oblique strains comes from baseball, where rotational force is central to pitching and hitting. A study of the Major League Baseball disabled list from 1991 to 2010 found:<sup>3</sup></p>
+    <ul>
+      <li><strong>393 abdominal muscle strains</strong>, about 5% of all baseball injuries, at least 92% of them involving the oblique or intercostal (rib) muscles.</li>
+      <li><strong>Average time lost</strong> of about 35 days for pitchers and 27 days for position players.</li>
+      <li>Most injuries occurred on the side <strong>opposite</strong> the throwing arm or batting side.</li>
+      <li>A <strong>reinjury rate of about 12%</strong>.</li>
+      <li>Rates <strong>rose over the 20-year period</strong>, especially early in the season.</li>
+    </ul>
+
+    <h2>Possible Risk Factors</h2>
+    <p>Because the core links the hips to the upper body, researchers have looked at whether hip mobility matters. A study of professional baseball players found that reduced hip internal rotation was associated with a higher risk of abdominal (core) and back muscle injuries, but not of shoulder or elbow injuries.<sup>4</sup></p>
+
+    <h2>Diagnosis and Recovery</h2>
+    <p>Oblique strains typically cause sharp pain along the side of the trunk with twisting, reaching, or forceful movements. MRI can show which muscle layer is involved and how extensive the injury is.<sup>2</sup> Recovery usually involves a period of relative rest followed by progressive rehabilitation and a gradual return to sport-specific movements. The baseball data show it is common to miss several weeks, and the reinjury rate highlights the importance of a complete recovery before returning.<sup>3</sup></p>
+
+    <h2>The Bottom Line</h2>
+    <p>The oblique muscles are key to rotational power, and strains to them are a recognized injury in sports built on twisting motions.<sup>2,3</sup> In professional baseball, these injuries typically cost several weeks and recur about 12% of the time.<sup>3</sup> (For another common muscle injury, see our post on <a href="/blog/hamstring-strain-caleb-williams-bears-injury-explained.html">hamstring strains</a>.)</p>
+
+    <div class="disclaimer">
+      This article is for general educational purposes only and does not constitute medical advice, diagnosis, or treatment. It is not a substitute for evaluation by a qualified sports medicine physician. If you or your athlete is experiencing pain, please seek an in-person evaluation.
+    </div>
+
+    <div class="sources">
+      <h3>Sources</h3>
+      <ol>
+        <li>Samulski E. <a href="https://www.nbcsports.com/nba/news/stephen-curry-to-undergo-mri-for-abdominal-injury-warriors-concern-level-is-high" target="_blank" rel="noopener">"Stephen Curry suffers oblique abdominal tear, will be re-evaluated in two weeks."</a> NBC Sports. November 12, 2026.</li>
+        <li>Stensby JD, Baker JC, Fox MG. <a href="https://doi.org/10.1007/s00256-015-2261-y" target="_blank" rel="noopener">"Athletic Injuries of the Lateral Abdominal Wall: Review of Anatomy and MR Imaging Appearance."</a> <em>Skeletal Radiology.</em> 2016;45(2):155-162.</li>
+        <li>Conte SA, Thompson MM, Marks MA, Dines JS. <a href="https://doi.org/10.1177/0363546511433030" target="_blank" rel="noopener">"Abdominal Muscle Strains in Professional Baseball: 1991-2010."</a> <em>American Journal of Sports Medicine.</em> 2012;40(3):650-656.</li>
+        <li>Camp CL, Spiker AM, Zajac JM, et al. <a href="https://doi.org/10.5435/JAAOS-D-17-00223" target="_blank" rel="noopener">"Decreased Hip Internal Rotation Increases the Risk of Back and Abdominal Muscle Injuries in Professional Baseball Players: Analysis of 258 Player-seasons."</a> <em>Journal of the American Academy of Orthopaedic Surgeons.</em> 2018;26(9):e198-e206.</li>
+      </ol>
+    </div>
+
+    <a class="back-link" href="/blog/">&larr; Back to all posts</a>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">Ryan Robin <span>MD</span></div>
+    <div class="footer-tagline">Sports Medicine · Physical Medicine &amp; Rehabilitation · Duly Health and Care</div>
+    <div class="footer-links">
+      <a href="/#about">About</a>
+      <a href="/#specialties">Specialties</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#locations">Locations</a>
+      <a href="https://www.dulyhealthandcare.com/providers/ryan-robin-md" target="_blank">Duly Profile</a>
+      <a href="https://www.instagram.com/ryanrobin_md/" target="_blank">Instagram</a>
+    </div>
+    <div class="footer-copy">© 2026 ryanrobinmd.com · This site is for informational purposes only and does not constitute medical advice.</div>
+  </div>
+</footer>
+
+</body>
+</html>
